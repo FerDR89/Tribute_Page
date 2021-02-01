@@ -1,0 +1,180 @@
+/* Reset del navegador */
+*{
+    box-sizing: content-box;
+}
+
+/*Variables*/
+:root {
+    --title-font-family:'Poppins',sans-serif;
+    --text-font-family:'Inter', sans-serif;
+    --bg-color1:#FFFFFF;
+    --bg-color2: #eeeeee;
+    --bg-color3:#dddddd;
+}
+
+/*Definiciones generales*/
+
+h1,h2,h3,h4,h5,h6,footer {
+    font-family: var(--title-font-family);
+}
+
+body,input,button,select,p,textarea {
+    font-family: var(--text-font-family);
+}
+
+body {
+    background-color: var(--bg-color1);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#main-menu {
+    background-color: var(--bg-color3);
+    width: 100%;
+    height: 4rem;
+    /* position: fixed; */
+    top:0px;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
+
+.main-menu__ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.main-menu__li {
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;  
+}
+
+.main-menu__a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-menu__a:hover {
+    border-bottom: 2px solid black;
+}
+
+.main-menu__a:visited,:active,:link {
+   color:black;
+}
+
+
+#main-container {
+    width: 100%;
+    background-color: var(--bg-color2);
+    border: 1px solid var(--bg-color2);
+}
+
+.main-title {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.main-title__h1{
+    text-transform: capitalize;
+    text-shadow: black -3px 3px 3px;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.5rem;
+}
+
+.main-title__p {
+    letter-spacing: 0.2rem;
+    margin-bottom: 2rem;
+}
+
+.main-img__container {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: var(--bg-color1); 
+    border:1px solid transparent;
+    border-radius: 1rem;
+}
+
+.main-img__img {
+     width:100%;
+     border:1px solid transparent;
+     border-radius: 2vh;
+     margin:1vh auto;
+}
+
+.main-img__caption
+{
+    margin-top:0.5rem;
+    text-align: center;
+    font-style: italic;
+}
+
+.tribute-info__title {
+    text-align: center;
+    margin: 2rem auto;
+    text-decoration-line: underline
+}
+
+.tribute-info__list{
+    list-style-image: url(/source/flecha-correcta.png);
+}
+
+.tribute-info__li{
+    margin:0 15rem;
+    line-height: 2rem;
+}
+
+.tribute-info__decoration {
+    font-weight: bolder;
+} 
+
+.redes {
+    position:fixed;
+    right: 2.9rem;
+    top: 20rem;
+    width: 1px;
+} 
+
+.redes-img {
+    width: 2rem;
+}
+
+
+#footer-container {
+    width: 100%;
+    background-color: var(--bg-color3);
+    border: 1px solid transparent;
+    border-radius: 0 0 1vh 1vh;    
+    position: relative;
+}
+
+.footer-blockquote {
+    margin: 2rem 25rem;
+}
+
+.footer-moreinfo {
+    margin:1rem 18rem;
+    font-weight: bold;
+}
+
+.footer-link {
+    text-decoration: none;
+    color:rgb(11, 105, 160);
+}
+
+.footer-link:hover{
+    color:blue;
+    font-weight: bold;
+}
+
+.footer-up {
+    position:absolute;
+    right: 0.1rem;
+    bottom: 0.2rem;
+}
+
+.footer-up__img {
+    width: 1.5rem;
+    transform: rotate(270deg);
+}
